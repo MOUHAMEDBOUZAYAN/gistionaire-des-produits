@@ -1,4 +1,6 @@
 const readline = require("readline");
+const Inventory = require("./invotory");
+
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
@@ -20,6 +22,7 @@ function panneauDeControle() {
     switch (choix) {
       case "1":
         console.log("AJOUTER UN NOUVEAU PRODUIT :");
+        Inventory.ajouter_un_product();
         panneauDeControle();
         break;
       case "2":
