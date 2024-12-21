@@ -10,15 +10,15 @@ console.log("BINVENUE DANS NOTRE GESTION DES PRODUIS .");
 panneauDeControle();
 
 function panneauDeControle() {
-  console.log("++++++++++ PANNAEU DE CONTROLE ++++++++++ ");
+  console.log("++++++++++ { PANNAEU DE CONTROLE } ++++++++++ ");
   console.log("VEULLEZ ENTRER VOTRE CHOIX : ")
-  console.log("1. Pour Ajouter.");
-  console.log("2. Pour Afficher.");
-  console.log("3. Pour Modifier.");
-  console.log("4. Pour Suprimer.");
-  console.log("5. Pour quitter.");
-  console.log("+++++++++++++++++++++++++++++++++++++++++");
-  rl.question("Entrez votre choix : ", (choix) => {
+  console.log("1. POUR AJOUTRE UN PRODUIT.");
+  console.log("2. POUR AFICHER LES PRODUITS.");
+  console.log("3. PPOUR MOUDIFIER LES INFOS DE PRODUITS.");
+  console.log("4. POUR SUPREMER LES PRODUITS.");
+  console.log("5. POUR QUTTEZ.");
+  console.log("++++++++++++++++++++++++++++++++++++++++++++++ ");
+  rl.question("ENTRER VOTRE CHIOX : ", (choix) => {
     switch (choix) {
       case "1":
         console.log("AJOUTER UN NOUVEAU PRODUIT :");
@@ -27,6 +27,7 @@ function panneauDeControle() {
         break;
       case "2":
         console.log(" LES PRODUITS QUI SONT DISPONIBLE :");
+        Inventory.afichage_les_product();
         panneauDeControle();
         break;
       case "3":
